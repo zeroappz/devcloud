@@ -1,1 +1,1 @@
-# Dev[Sec]Ops and Private Cloud Website 
+# DevSecOps and Private Cloud Website 
