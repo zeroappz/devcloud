@@ -27774,6 +27774,18 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+.pjus{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.pjusp{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: left;
+  padding-top: 23px;
+}
+
 
 abbr[title] {
   -webkit-text-decoration: underline dotted;
