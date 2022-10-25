@@ -6,3 +6,5 @@
     - join
     - pricing
     - request-demo
+    - FAQ
+    - Cost Estimator
