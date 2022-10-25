@@ -100,7 +100,7 @@
     <div class="main-wrapper">
 
         <header class="main-header w-100 z-10">
-            <nav class="navbar navbar-expand-xl navbar-light sticky-header">
+            <nav class="navbar navbar-expand-xl navbar-light sticky-header" style="padding: 12px 0px;">
                 <div class="container d-flex align-items-center justify-content-lg-between position-relative">
                     <a href="index.html" class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none">
                         <img src="assets/img/logo.png" alt="logo" class="img-fluid logo-white" />
@@ -120,7 +120,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="devsecops.html" role="button" aria-expanded="false">
-                                    Dev[Sec]Ops
+                                    DevSecOps
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -179,19 +179,30 @@
                             <div id="top" class="col-offset-1 col-6 col-t-12 col-m-8">
                                 <div class="calculator__content">
                                     <form class="form calculator-form">
-                                        <h4>Number of Projects</h4>
-                                        <p>The number of different projects is a good indicator for the total lan size and is used as base value for calculation. A typical value for an average plan would be 10.</p>
+                                        <h4>Number of CPUs</h4>
+                                        <p>The number of different vCPUs. A typical value for an average plan would be 10.</p>
 
                                         <!--Number of projects-->
                                         <div class="form__form-group calculator__form-group form__form-group--small">
-                                            <input id="projects" class="form__input calculator__input js-field__project" type="text" value="1">
-                                            <label class="form__label calculator__input-label">Projects
+                                            <input id="projects" class="form__input calculator__input js-field__project" type="text" value="4">
+                                            <label class="form__label calculator__input-label">vCPUs
                 <span class="calculator__color_label"><span class="mdi mdi-note-multiple-outline"></span> x $10</span>
               </label>
                                         </div>
 
-                                        <h4>Number of Pages</h4>
-                                        <p>The cost is directly related to the maximum quantity of pages.</p>
+                                        <h4>RAM Size</h4>
+                                        <p>The number of different RAM size. A typical value for the size of RAM will be scaled.</p>
+
+                                        <!--Number of projects-->
+                                        <div class="form__form-group calculator__form-group form__form-group--small">
+                                            <input id="projects" class="form__input calculator__input js-field__project" type="text" value="6">
+                                            <label class="form__label calculator__input-label">Gb RAM
+                <span class="calculator__color_label"><span class="mdi mdi-note-multiple-outline"></span> x $10</span>
+              </label>
+                                        </div>
+
+                                        <h4>Total Storage of SSD</h4>
+                                        <p>The cost is directly related to the maximum quantity of storages used.</p>
 
                                         <!--Number of pages-->
                                         <div class="form__form-group">
@@ -289,16 +300,16 @@
               </label>
                                         </div>
 
-                                        <h4>Export</h4>
+                                        <h4>Other Features</h4>
                                         <p>Please, select the features you require.</p>
 
                                         <!--Exports-->
                                         <div class="form__form-group sum-input plus-input">
                                             <label class="checkbox-btn">
                 <input class=" checkbox-btn__checkbox" type="checkbox" name="google" value="10"
-                       data-title="Export to Google Drive" data-value="+ 10 $">
+                       data-title="Nightly BackUp" data-value="+ 10 $">
                 <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
-                <span class="checkbox-btn__label">Export to Google Drive
+                <span class="checkbox-btn__label">Nightly BackUp
                   <span class="calculator__color_label">$10</span>
                 </span>
               </label>
@@ -306,9 +317,9 @@
                                         <div class="form__form-group sum-input plus-input">
                                             <label class="checkbox-btn">
                 <input class=" checkbox-btn__checkbox" type="checkbox" name="dropbox" value="10"
-                       data-title="Export to Dropbox" data-value="+ 10 $">
+                       data-title="Performance Graphs" data-value="+ 10 $">
                 <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
-                <span class="checkbox-btn__label">Export to Dropbox
+                <span class="checkbox-btn__label">Performance Graphs
                   <span class="calculator__color_label">$10</span>
                 </span>
               </label>
@@ -316,9 +327,9 @@
                                         <div class="form__form-group sum-input plus-input">
                                             <label class="checkbox-btn">
                 <input class=" checkbox-btn__checkbox" type="checkbox" name="pdf" value="5"
-                       data-title="Export to PDF" data-value="+ 5 $">
+                       data-title="Out-of-band Console" data-value="+ 5 $">
                 <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
-                <span class="checkbox-btn__label">Export to PDF
+                <span class="checkbox-btn__label">Out-of-band Console
                   <span class="calculator__color_label">$5</span>
                 </span>
               </label>
@@ -326,9 +337,9 @@
                                         <div class="form__form-group sum-input plus-input">
                                             <label class="checkbox-btn">
                 <input class=" checkbox-btn__checkbox" type="checkbox" name="jpg" value="5"
-                       data-title="Export to JPG" data-value="+ 5 $">
+                       data-title="Remote Desktop Setup" data-value="+ 5 $">
                 <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
-                <span class="checkbox-btn__label">Export to JPG
+                <span class="checkbox-btn__label">Remote Desktop Setup
                   <span class="calculator__color_label">$5</span>
                 </span>
               </label>
@@ -336,9 +347,9 @@
                                         <div class="form__form-group sum-input plus-input">
                                             <label class="checkbox-btn">
                 <input class=" checkbox-btn__checkbox" type="checkbox" name="png" value="5"
-                       data-title="Export to PNG" data-value="+ 5 $">
+                       data-title="FTP Server Setup" data-value="+ 5 $">
                 <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
-                <span class="checkbox-btn__label">Export to PNG
+                <span class="checkbox-btn__label">FTP Server Setup
                   <span class="calculator__color_label">$5</span>
                 </span>
               </label>
@@ -350,19 +361,19 @@
                                         <div class="form__form-group sum-input plus-input">
                                             <label class="checkbox-btn">
                 <input class=" checkbox-btn__checkbox" type="checkbox" name="e-commerce" value="100"
-                       data-title="Integrated e-commerce" data-value="+ 100 $">
+                       data-title="Integrated Git Repository" data-value="+ 100 $">
                 <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
-                <span class="checkbox-btn__label">Integrated e-commerce
+                <span class="checkbox-btn__label">Integrated Git Repository
                   <span class="calculator__color_label">$100</span>
                 </span>
               </label>
                                         </div>
-                                        <p class="calculator__checkbox-description">Integrate online shopping to your account</p>
+                                        <p class="calculator__checkbox-description">Integrate Project repository to your account</p>
 
                                         <!--Custom domain-->
                                         <div class="form__form-group plus-input">
                                             <label class="checkbox-btn">
-                <input id="domain" class=" checkbox-btn__checkbox" type="checkbox" name="domain" value="10"
+                <input id="domain" class=" checkbox-btn__checkbox" type="checkbox" name="domain" value="3"
                        data-title="Custom domain" data-value="+ 10 $">
                 <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
                 <span class="checkbox-btn__label">Custom domain
@@ -370,7 +381,7 @@
                 </span>
               </label>
                                         </div>
-                                        <p class="calculator__checkbox-description">Choose your own damain. If total cost more $100 domain is free.
+                                        <p class="calculator__checkbox-description">Choose your own domain. If total cost more $100 domain is free.
                                         </p>
 
                                         <!--Donation-->
@@ -384,33 +395,33 @@
                 </span>
               </label>
                                         </div>
-                                        <p class="calculator__checkbox-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p class="calculator__checkbox-description">Features will be integrated and managed by Delphy Team</p>
 
                                         <!--Your design-->
                                         <div class="form__form-group page-input">
                                             <label class="checkbox-btn">
                 <input id="design" class="checkbox-btn__checkbox" type="checkbox" name="design" value="1.5"
-                       data-title="Your own designs" data-value=" x 1.5">
+                       data-title="Your own Tools Integrations" data-value=" x 1.5">
                 <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
-                <span class="checkbox-btn__label">Your own designs
+                <span class="checkbox-btn__label">Your own  Tools Integrations
                   <span class="calculator__color_label"><span class="mdi mdi-note-multiple-outline"></span> x 1.5</span>
                 </span>
               </label>
                                         </div>
-                                        <p class="calculator__checkbox-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p class="calculator__checkbox-description">Features will be integrated and managed by Delphy Team</p>
 
                                         <!--Comments-->
                                         <div class="form__form-group sum-input plus-input">
                                             <label class="checkbox-btn">
                 <input class=" checkbox-btn__checkbox" type="checkbox" name="comments" value="100"
-                       data-title="Unlimited comments" data-value="+ 100 $">
+                       data-title="Unlimited Log Management" data-value="+ 100 $">
                 <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
-                <span class="checkbox-btn__label">Unlimited comments
+                <span class="checkbox-btn__label">Unlimited Log Management
                   <span class="calculator__color_label">$100</span>
                 </span>
               </label>
                                         </div>
-                                        <p class="calculator__checkbox-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p class="calculator__checkbox-description">Features will be integrated and managed by Delphy Team</p>
 
                                         <!--Analytics-->
                                         <div class="form__form-group multiple-input">
@@ -423,7 +434,7 @@
                 </span>
               </label>
                                         </div>
-                                        <p class="calculator__checkbox-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p class="calculator__checkbox-description">Features will be integrated and managed by Delphy Team</p>
 
                                         <!--Team-->
                                         <div class="form__form-group page-input">
@@ -436,7 +447,7 @@
                 </span>
               </label>
                                         </div>
-                                        <p class="calculator__checkbox-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p class="calculator__checkbox-description">Features will be integrated and managed by Delphy Team</p>
 
                                         <!--Task-->
                                         <div class="form__form-group multiple-input">
@@ -449,15 +460,15 @@
                 </span>
               </label>
                                         </div>
-                                        <p class="calculator__checkbox-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p class="calculator__checkbox-description">Features will be integrated and managed by Delphy Team</p>
 
                                         <div class="form__card calculator__card-form card js-form" id="card-form">
                                             <div class="calculator__card-send">
                                                 <h4>Save your estimate</h4>
-                                                <p>Enter your email address and we’ll send you the calculation.</p>
+                                                <p>Enter your email address and we'll send you the calculation.</p>
                                                 <div class="form__form-group">
                                                     <label class="form__label">Email</label>
-                                                    <input class="form__input js-field__email" type="email" placeholder="example@mail.com" required>
+                                                    <input class="form__input js-field__email" type="email" placeholder="example@domain.com" required>
                                                     <span class="form-validation"></span>
                                                 </div>
                                                 <div class="form__form-group form__form-group--read-and-agree">
@@ -465,7 +476,7 @@
                     <input class=" checkbox-btn__checkbox" type="checkbox" name="terms" required>
                     <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
                     <span class="checkbox-btn__label">I read and agree to
-										<a href="09_privacy.html" target="_blank" class="link link--accent link--accent-bold">Terms & Conditions</a></span>
+										<a href="#" target="_blank" class="link link--accent link--accent-bold">Terms & Conditions</a></span>
                   </label>
                                                 </div>
                                                 <button class="site-btn site-btn--accent form__submit disable" type="submit" value="Send" disabled>Save
@@ -515,11 +526,6 @@
         </section>
         <!--pricing section end-->
 
-        <!-- <section class="career-promo ptb-120 bg-light">
-            <div class="j-calculator" data-key="app.{hoster_domain}"></div>
-        </section> -->
-
-
 
         <!--footer section start-->
         <footer class="footer-section">
@@ -532,7 +538,7 @@
                             <div class="footer-single-col">
                                 <div class="footer-single-col mb-4">
                                     <img src="assets/img/logo-full-white.png" alt="logo" class="img-fluid logo-white">
-                                    <img src="assets/img/logo-color.png" alt="logo" class="img-fluid logo-color">
+                                    <!-- <img src="assets/img/logo-color.png" alt="logo" class="img-fluid logo-color"> -->
                                 </div>
                                 <p>Our latest news, articles, and resources, we will sent to your inbox weekly.</p>
 
